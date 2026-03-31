@@ -31,3 +31,7 @@
 - `integrations.local.yaml`
 
 Все такие файлы будут игнорироваться git по правилам этой директории.
+
+Для machine-specific путей до локальных репозиториев используй секцию
+`repositories` внутри `local-machine.yaml` по образцу
+`local-machine.example.yaml`.

@@ -4,3 +4,11 @@ integrations:
     password: "<your-password>"
   jira:
     token: "<your-token>"
+repositories:
+  sol_project_root: "/Users/rostislavmaslov/workspace/projects/sol_project"
+  sol_app: "/Users/rostislavmaslov/workspace/projects/sol_project/sol_app"
+  sol_app_docs: "/Users/rostislavmaslov/workspace/projects/sol_project/sol_app_docs"
+  sol_backend: "/Users/rostislavmaslov/workspace/projects/sol_project/sol_backend"
+  sol_bruno: "/Users/rostislavmaslov/workspace/projects/sol_project/sol_bruno"
+  sol_invite: "/Users/rostislavmaslov/workspace/projects/sol_project/sol_invite"
+  sol_site: "/Users/rostislavmaslov/workspace/projects/sol_project/sol_site"

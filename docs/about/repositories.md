@@ -14,22 +14,23 @@
 - `sol_invite`
 - `sol_site`
 
-## Типовая локальная структура
+## Локальное расположение
 
-Обычно эти репозитории лежат рядом в одной локальной группе проекта:
+Machine-specific пути задаются локально через
+`ai-context/parameters/local-machine/local-machine.yaml`.
 
-```text
-<workspace>/sol_project/
-  sol_app/
-  sol_app_docs/
-  sol_backend/
-  sol_bruno/
-  sol_invite/
-  sol_site/
-```
+В git хранится только пример:
+[`local-machine.example.yaml`](../../ai-context/parameters/local-machine/local-machine.example.yaml).
 
-Конкретный абсолютный путь зависит от машины и не фиксируется в versioned
-документации репозитория.
+Для локальной структуры используются такие ключи:
+
+- `repositories.sol_project_root` -> корень локальной группы проекта `sol_project/`
+- `repositories.sol_app` -> репозиторий `sol_app`
+- `repositories.sol_app_docs` -> репозиторий `sol_app_docs`
+- `repositories.sol_backend` -> репозиторий `sol_backend`
+- `repositories.sol_bruno` -> репозиторий `sol_bruno`
+- `repositories.sol_invite` -> репозиторий `sol_invite`
+- `repositories.sol_site` -> репозиторий `sol_site`
 
 ## Роль текущего репозитория
 
