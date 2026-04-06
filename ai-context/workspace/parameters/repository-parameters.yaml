@@ -41,6 +41,32 @@ ai_context:
       epic_breakdown_file_pattern: <code>.md
       copy_from_source_of_truth_only_in_project_manager_mode: true
       source_of_truth_examples_dir: ai-context/baseline/examples/epics/_example
+  project_context:
+    project_code: sol_app
+    current_repository: sol_app_docs
+    current_repository_role: shared-documentation-and-project-context
+    repository_group_root: sol_project
+    child_repositories:
+      - sol_app
+      - sol_app_docs
+      - sol_backend
+      - sol_bruno
+      - sol_invite
+      - sol_site
+    documentation_scope:
+      repository: sol_app_docs
+      describes_child_repositories: true
+      default_target_repositories:
+        - sol_app
+        - sol_backend
+        - sol_bruno
+        - sol_invite
+        - sol_site
+    branch_awareness:
+      required_for_child_repositories: true
+      local_snapshot_file: ai-context/workspace/parameters/local-machine/local-machine.yaml
+      snapshot_key: repositories_state.branches
+      refresh_command: git -C <repo-path> rev-parse --abbrev-ref HEAD
   source_of_truth:
     repo: https://github.com/foodtechlab/ai_context_rules
     branch_priority:
