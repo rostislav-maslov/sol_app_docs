@@ -17,10 +17,10 @@
 ## Локальное расположение
 
 Machine-specific пути задаются локально через
-`ai-context/parameters/local-machine/local-machine.yaml`.
+`ai-context/workspace/parameters/local-machine/local-machine.yaml`.
 
-В git хранится только пример:
-[`local-machine.example.yaml`](../../ai-context/parameters/local-machine/local-machine.example.yaml).
+В git хранится только baseline-шаблон:
+[`local-machine.example.yaml`](../../ai-context/baseline/templates/local-machine.example.yaml).
 
 Для локальной структуры используются такие ключи:
 
